@@ -1,0 +1,17 @@
+@font-face {
+    font-family: vazir;
+    src: url(../assets/font/Vazir-Regular-FD-WOL.woff2) format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: vazir;
+    font-size: 1.6rem;
+    
+}
+a{
+    font-family: vazir;
+}

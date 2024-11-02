@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: #000000;
+    color: #fff;
+}
+.filimo-nav-main{
+    z-index: 9;
+   
+}
+.filimo-nav .navbar-brand img{
+    height: 25px;
+    
+    
+}
+.filimo-nav .navbar-brand{
+    margin-left: 7rem;
+    padding-left: 3rem;
+    border-color: #ccc8 !important;
+}
+.filimo-nav .navbar-nav{
+    font-size: 13px;
+}
+.filimo-nav .navbar-nav .nav-item{
+    margin: 0 1.5rem;
+    display: flex;
+}
+.filimo-nav .navbar-nav .nav-item img[src="./assets/image/icon/play-btn.svg"]{
+    margin-left: .5rem;
+    
+}
+.filimo-nav .nav-link:hover{
+    color: #f89b3e;
+
+}
+.filimo-vip{
+    background-color:#17924e !important ;
+}
+#filimo-slide .carousel-caption{
+    left: 0 !important;
+    right: 0 !important;
+    width: 100%;
+}
+#filimo-slide .carousel-item{
+    position: relative;
+}
+#filimo-slide .carousel-item::before{
+content: "";
+width: 100%;
+height: 100%;
+display: inline-block;
+position: absolute;
+background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,0.3561799719887955) 0%, rgba(0,0,0,1) 84%);
+
+}
+#filimo-slide{
+    position: relative;
+    top: 30px;
+}
+#filimo-slide .carousel-caption li{
+    margin: 1rem 3rem !important;
+}
+#filimo-slide .carousel-caption li img{
+    padding: 3px;
+    background-color: #37d47e57;
+    border-radius: 50%;
+    
+}
+#filimo-slide .filimo-vip img{
+    width: 23px;
+    
+}
+/* filimo-tab__title */
+.filimo-tab{
+    margin-top: 50px;
+}
+.filimo-tab__title{
+    display: flex;
+}
+.filimo-tab__title > div span{
+    font-size: 12px;
+    padding: 3px 6px;
+    background-color: #9997;
+    border-radius: 5px;
+    margin: 0 .5rem;
+    cursor: pointer;
+    
+}
+
+.filimo-tab__content{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap !important;
+    /* overflow: auto; */
+    
+}
+@media screen and (min-width:768px) {
+    .filimo-tab__content{
+        overflow: unset !important;
+    }
+    
+}
+.filimo-tab__content .nav-link{
+    padding: 2px !important;
+    border-radius: 2px !important;
+    
+}
+.filimo-tab__content.nav-tabs{
+    border-bottom: none !important;
+    
+}
+.filimo-tab__content img{
+    border-radius: 5px;
+    filter: brightness(60%);
+    transition: .6s;
+}
+.filimo-tab__content img:hover{
+    filter: brightness(100%);
+    
+}
+.imgHover{
+    filter: brightness(100%) !important;
+
+}
+.tab-opacity{
+    transition:opacity 1s ease;
+    /* opacity: 1; */
+}
+
+.tab-opacity:not(.show){
+    opacity: 0 !important;
+}
+.filimo-tab__like{
+    color: #17924e;
+}
+.filimo-tab__txt > div > span{
+    padding: 4px 10px ;
+    background-color: #66666691;
+    border-radius: 12px;
+    margin: 0 10px;
+    font-size: 10px;
+    cursor: pointer;
+
+}
+.filimo-tab__txt{
+    position: absolute;
+    z-index: 3;
+}
+.filimo-tab__content-detail > div > div{
+    display: flex;
+    justify-content: space-between;
+        height: 350px;
+}
+.filimo-tab__img::before{
+    content: "";
+    width: 90%;
+    height: 70%;
+    display: inline-block;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(304deg, rgba(0, 0, 0, 0.37) 0%, rgba(0, 0, 0, 0.432) 71%);
+    z-index: 2;
+}
+.filimo-tab__img img{
+width: 500px;
+border-radius: 12px;
+position: absolute;
+z-index: 1;
+left: 5%;
+
+}
+.filimo-tab__txt p{
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.filimo-tav__video{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+    position: relative;
+    z-index: 10;
+}
+.filimo-tav__video a{
+    width: 23%;
+
+}
+.filimo-tav__video img{
+    width: 100%;
+    border-radius: 12px;
+    filter: brightness(60%) blur(1px);
+    transition: .4s;
+}
+.filimo-tav__video img:hover{
+    filter: brightness(100%) blur(0px);
+
+}
+/* filimo-cinema-online */
+.filimo-cinema-online{
+    background-image: url(../assets/image/pexels-tima-miroshnichenko-7991178.jpg);
+    background-size: cover;
+    /* height: 400px; */
+    padding: 30px;
+}
+.check-icon{
+    padding: 3px;
+    background-color: #37d47e57;
+    border-radius: 50%;
+
+}
+.filimo-cinema-item{
+    display: flex;
+    border: 1px solid #555151;
+    border-radius: 12px;
+    background-image: linear-gradient(45deg,rgba(75, 10, 10, 0.803) 10%,#000000c2);
+    box-shadow: 0 0 3px #000;
+    justify-content: space-between;
+    align-content: space-around;
+    
+}
+.filimo-cinema-item__img img{
+    border-radius: 8px;
+    margin: 5px;
+    margin: 10px;
+}
+.filimo-cinema-detail{
+    padding: 15px;   
+    flex-grow: 1;
+}
+.img-ticket{
+    transform: rotate(90deg);
+    width: 13px;
+}
+
+.filimo-tab__like{
+    padding: 4px 10px;
+    background-color: #66666691;
+    border-radius: 12px;
+    /* margin: 0 10px; */
+    font-size: 10px;
+    cursor: pointer;
+   
+}
+.fo-item {
+    display: flex;
+justify-content:center ;    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .max-w-screen-md {
+    max-width: 768px;
+  }
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p-4 {
+    padding: 1rem;
+  }  
+  .flex {
+    display: flex;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .gap-2 {
+    gap: 0.5rem;
+  }
+  .mb-3 {
+    margin-bottom: 0.75rem;
+  }
+  .text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  .text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .m-0 {
+    margin: 0px;
+  }
+  .text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+  .text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .w-fit {
+    width: fit-content;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .border-2 {
+    border-width: 2px;
+  }
+  .border-black {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  }
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .font-semibold {
+    font-weight: 600;
+  }
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hidden {
+    display: none;
+  }
